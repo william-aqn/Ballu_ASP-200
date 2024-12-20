@@ -235,6 +235,34 @@ ballu_asp_200_badroom:
         payload_on: "1"
         payload_off: "0"
         icon: mdi:brightness-6
+      - device: # Переключение режима заслонки
+          identifiers: <MAC>
+        name: "Damper mode"
+        unique_id: "ballu_asp200_<MAC>_damper"
+        state_topic: "rusclimate/<device_type>/<device_id>/state/damper"
+        command_topic: "rusclimate/<device_type>/<device_id>/control/damper"
+        payload_on: "true"
+        payload_off: "false"
+        icon: mdi:swap-horizontal-circle-outline
+      - device: # Переключение режима U/V лампы для очистки воздуха
+          identifiers: <MAC>
+        name: "UV mode"
+        unique_id: "ballu_asp200_<MAC>_uv"
+        state_topic: "rusclimate/<device_type>/<device_id>/state/uv"
+        command_topic: "rusclimate/<device_type>/<device_id>/control/uv"
+        payload_on: "true"
+        payload_off: "false"
+        icon: mdi:sun-wireless-outline
+      - device: # Переключение режима ионизации для очистки воздуха
+          identifiers: <MAC>
+        name: "Ionizer mode"
+        unique_id: "ballu_asp200_<MAC>_ionizer"
+        state_topic: "rusclimate/<device_type>/<device_id>/state/ionizer"
+        command_topic: "rusclimate/<device_type>/<device_id>/control/ionizer"
+        payload_on: "true"
+        payload_off: "false"
+        icon: mdi:lightning-bolt-outline
+        
 #    button: # Требуется дополнительное тестирование
 #      - device: # Сброс ресурса фильтра
 #          identifiers: <MAC>    
