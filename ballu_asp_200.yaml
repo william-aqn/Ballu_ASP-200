@@ -5,7 +5,7 @@
 # username: rusclimate
 # password: 87fcf5e2e441
 # host-name: mqtt.cloud.rusklimat.ru
-ballu_asp_100_badroom:
+ballu_asp_200_badroom:
   mqtt:
     climate:
       - device:
@@ -241,7 +241,7 @@ ballu_asp_100_badroom:
 #        name: "Reset filter"
 #        unique_id: "ballu_asp200_<MAC>_reset_filter"
 #        command_topic: "rusclimate/<device_type>/<device_id>/control/expendables"
-#        payload_press: "[0]"
+#        payload_press: "[0,0]"
 #        enabled_by_default: false
     select:
      -  device: # Звуки
