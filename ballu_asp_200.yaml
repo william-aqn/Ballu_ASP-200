@@ -163,7 +163,7 @@ ballu_asp_200_badroom:
         enabled_by_default: false
         state_topic: "rusclimate/<device_type>/<device_id>/state/sensor/pm2"
         unit_of_measurement: "ppm"
-        icon: mdi:molecule-pm2
+        icon: mdi:molecule
       - device: # Ресурс фильтра
           identifiers: <MAC>
         name: "Filter Remaining Life"
