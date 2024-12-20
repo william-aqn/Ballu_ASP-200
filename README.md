@@ -21,7 +21,7 @@ nano /jffs/configs/hosts.add
 
 Подключиться к вашему MQTT серверу mqtt explorer'ом и найти топик `rusclimate/<device_type>/<device_id>/`
 
-Заменить в конфиге [ballu_asp-200.yaml](/ballu_asp_200.yaml) **<device_type>/<device_id>** и **<MAC>** на данные вашего устройства которые отображаются в MQTT Explorer.
+Заменить в конфиге [ballu_asp-200.yaml](/ballu_asp_200.yaml) **<device_type>/<device_id>** и **< MAC>** на данные вашего устройства которые отображаются в MQTT Explorer.
 
 Пример: 
 ```yaml
