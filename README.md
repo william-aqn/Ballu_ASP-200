@@ -1,5 +1,7 @@
-# Ballu_ASP-100
-MQTT для бризера Ballu ONEAIR ASP-100
+# Ballu_ASP-200
+MQTT для бризера Ballu ONEAIR ASP-200
+
+*За основу взят [Ballu_ASP-100](https://github.com/v-vadim/Ballu_ASP-100)*
 
 Данный конфиг использует Packages https://www.home-assistant.io/docs/configuration/packages/
 
@@ -10,11 +12,11 @@ MQTT для бризера Ballu ONEAIR ASP-100
 
 Подключиться к вашему MQTT серверу mqtt explorer'ом и найти топик rusclimate/<device_type>/<device_id>/
 
-Заменить в конфиге ballu_asp-100.yaml <device_type>/<device_id> и < MAC> на данные вашего устройства которые отображаются в MQTT Explorer.
+Заменить в конфиге ballu_asp-200.yaml <device_type>/<device_id> и < MAC> на данные вашего устройства которые отображаются в MQTT Explorer.
 
 Пример: 
 
-command_topic: rusclimate/69/c9b7536b6fe724cababcf9ca3add8/control/ 
+command_topic: rusclimate/59/c9b7536b6fe724cababcf9ca3add8/control/ 
 
 MAC пишется слитно, без разделителей
 

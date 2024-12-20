@@ -1,6 +1,6 @@
 # Пример дабавления бризера из HA в УДЯ через YaHA Cloud
  entity_config:
-   climate.ballu_oneair_asp_100_breezer:
+   climate.ballu_oneair_asp_200_breezer:
      name: Бризер
      type: devices.types.ventilation
      modes:
@@ -21,17 +21,17 @@
          auto: ['Auto']
      custom_modes:
       thermostat:
-         state_entity_id: climate.ballu_oneair_asp_100_breezer
+         state_entity_id: climate.ballu_oneair_asp_200_breezer
          state_attribute: preset_mode
          set_mode:
           service: climate.set_preset_mode
           data:
              preset_mode: "{{ mode }}"
           target:
-             entity_id: climate.ballu_oneair_asp_100_breezer
+             entity_id: climate.ballu_oneair_asp_200_breezer
  filter:
    include_entities:
-     - climate.ballu_oneair_asp_100_breezer     
+     - climate.ballu_oneair_asp_200_breezer     
      
      
      
